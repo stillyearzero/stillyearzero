@@ -3,7 +3,7 @@
         <a href="<?php echo URLROOT; ?>" class="logo">Still Year Zero</a>
     </div>
 
-    <!-- <ul class="nav-menu">
+    <ul class="nav-menu">
         <li class="nav-item">
             <a href="<?php echo URLROOT; ?>/posts" class="nav-link">Blog</a>
         </li>
@@ -33,5 +33,5 @@
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
-    </div> -->
+    </div>
 </nav>
