@@ -12,7 +12,7 @@ define('APPROOT', dirname(dirname(__FILE__)));
 // Uploads folder
 define('UPLOAD_DIR', dirname(dirname(__DIR__)) . "\public\uploads\\");
 // URL Root
-define('URLROOT', 'localhost/stillyearzero');
+define('URLROOT', 'http://localhost/stillyearzero');
 // Site Name
 define('SITENAME', 'Still Year Zero');
 // App Version
