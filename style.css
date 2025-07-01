@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --header-height: 75vh;
+    --header-max-height: 500px;
+    --footer-height: 200px;
+    --content-width: 1024px;
+    --background-color: #f6e8cd;
+    --main-min-height: calc(100vh - (var(--header-max-height) + var(--footer-height)));
+}
+
+/* HEADER WITH BANNER IMAGE */
+
+header {
+    height: var(--header-height);
+    max-height: var(--header-max-height);
+    min-height: fit-content;
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.header-container {
+    padding: 80px 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container p {
+    font-size: 0.7em;
+    letter-spacing: 2.5px;
+}
+
+.coordinates-container {
+    width: 100%;
+    text-align: start;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+.title-container {
+    padding: 40px 20px;
+    border: 1px solid black;
+}
+
+.subheading-container {
+    width: 100%;
+    text-align: end;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.header-container h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+/* ####################### NAVBAR / HAMBURGER #################### */
+
+nav {
+    position: absolute;
+    top: 0;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 400px;
+    margin: 0 auto auto auto;
+    justify-content: space-between;
+    height: 40px;
+    padding-top: 30px;
+}
+
+.nav-menu .logo-container img {
+    height: 40px;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: fit-content;
+    width: 70px;
+    text-align: center;
+}
+
+.nav-link a {
+    text-transform: uppercase;
+    font-size: .8em;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.nav-link a:hover,
+.nav-link a:active {
+    font-weight: 600;
+}
+
+.logo-container {
+    font-size: 2.5em;
+}
+
+.logo-container a {
+    margin-top: -5px;
+}
+
+.menu-container ul {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+/* ############# GENERAL COMPONENTS ############### */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+/* #################### MAIN ############################# */
+
+main {
+    min-height: var(--main-min-height);
+    width: 100%;
+    max-width: var(--content-width);
+    background-color: var(--background-color);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+
+/* ###################### SECTION ########################### */
+
+section {
+    padding-bottom: 140px;
+    width: 100%;
+    max-width: var(--content-width);
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+#divider-image {
+    margin: 0;
+    padding: 0;
+}
+
+#divider-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 70%;
+}
+
+/* ###################### ABOOT ######################### */
+
+#about {
+    padding-top: 60px;
+    /* color: var(--black); */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+#about .title {
+    width: 100%;
+    text-align: center;
+}
+
+#about img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 80%;
+    margin-bottom: 60px;
+}
+
+.about-body {
+    text-align: justify;
+    line-height: 1.5;
+    max-width: 600px;
+    padding: 0 10px;
+}
+
+.about-body a {
+    color: black;
+    /* font-weight: 600; */
+}
+
+.about-body a:hover, .about-body a:active {
+    text-decoration: underline;
+    font-weight: 100px;
+}
+
+/* ##################### FOOTER ########################## */
+
+footer {
+    height: var(--footer-height);
+    max-width: var(--content-width);
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.footer-container {
+    height: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container .logo-container {
+    font-size: 1.2em;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.copyright-container {
+    /* width: 400px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .8em;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: fit-content;
+    width: 70px;
+    text-align: center;
+}
+
+.copyright-container a {
+    color: white;
+}
+
+.copyright-container a:hover, .copyright-container a:active {
+    font-weight: 600;
+}
+
+.divider {
+    margin: auto 15px;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --header-max-height: 50vh;
+    }
+
+    .nav-link.logo-container {
+        display: none;
+    }
+
+    .navbar {
+        z-index: 1;
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 4rem;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    main.active {
+        display: none;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: var(--background-color);
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav-menu.active {
+        right: 0%;
+    }
+
+    .nav-link {
+        margin: 2.5rem 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-link a {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .nav-link a.active {
+        font-weight: 600;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active {
+        position: fixed;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 2px;
+        margin: 6px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: black;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* ############# GENERAL COMPONENTS ############### */
+
+    .btn:link,
+    .btn:visited {
+        padding: 15px 30px;
+        max-width: 100%;
+    }
+
+    /* ###################### SECTION ########################### */
+
+    section {
+        padding-bottom: 40px;
+    }
+
+    .section-title {
+        margin-bottom: 60px;
+    }
+
+    /* HEADER WITH BANNER IMAGE */
+
+    header {
+        margin-bottom: 0;
+    }
+
+    .title-container {
+        padding: 20px 10px;
+    }
+
+    /* ###################### ABOUT ########################### */
+
+    #about {
+        padding-bottom: 60px;
+    }
+
+    footer {
+        height: 20vh;
+    }
+}
