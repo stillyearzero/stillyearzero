@@ -9,7 +9,7 @@
 :root {
     --header-height: 75vh;
     --header-max-height: 500px;
-    --footer-height: 200px;
+    --footer-height: 250px;
     --content-width: 1024px;
     --background-color: #f6e8cd;
     --main-min-height: calc(100vh - (var(--header-max-height) + var(--footer-height)));
@@ -193,7 +193,7 @@ section {
 
 #divider-image img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
     object-position: 50% 70%;
 }
@@ -232,7 +232,6 @@ section {
 
 .about-body a {
     color: black;
-    /* font-weight: 600; */
 }
 
 .about-body a:hover, .about-body a:active {
@@ -272,7 +271,6 @@ footer {
 }
 
 .list-container {
-    /* width: 400px; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -381,8 +379,8 @@ footer {
         width: 25px;
         height: 2px;
         margin: 6px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
+        /* -webkit-transition: all 0.3s ease-in-out; */
+        /* transition: all 0.3s ease-in-out; */
         background-color: black;
     }
 
