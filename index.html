@@ -4,10 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.js" defer></script> -->
     <title>Still Year Zero</title>
     <link rel="icon" type="image/x-icon" href="./media/favicon.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* HEADER WITH BANNER IMAGE */
+
+        body {
+            background-color: black;
+        }
+
+        header {
+            height: 100vh;
+            width: 100%;
+            margin: 0 auto auto auto;
+            background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(media/banner.JPEG);
+            background-position: 50% 40%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .header-container {
+            width: 95vw;
+            max-width: 400px;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            margin-top: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-container p {
+            font-size: 0.7em;
+            letter-spacing: 2.5px;
+        }
+
+        .coordinates-container {
+            width: 100%;
+            text-align: start;
+            margin-bottom: 15px;
+            margin-top: 40px;
+        }
+
+        .title-container {
+            padding: 40px 10px;
+            border: 1px solid white;
+            width: 100%;
+        }
+
+        .subheading-container {
+            width: 100%;
+            text-align: end;
+            margin-top: 15px;
+            margin-bottom: 80px;
+        }
+
+        .header-container h1 {
+            font-weight: 500;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3.5em;
+            text-align: center;
+        }
+
+        .button-container {
+            width: 100%;
+            height: 60px;
+            margin-top: 0;
+            margin-bottom: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: blue;
+            padding: 10px 40px;
+            border-radius: 2px;
+            border: 1px solid white;
+        }
+
+        .btn:hover {
+            background-color: rgba(0, 0, 255, 0.711);
+        }
+
+        /* ############# GENERAL COMPONENTS ############### */
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        @media (max-width: 3440px) {
+            header {
+                background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(media/banner3440.JPEG);
+            }
+        }
+
+        @media (max-width: 1920px) {
+            header {
+                background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(media/banner1920.JPEG);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            header {
+                background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(media/banner1024.JPEG);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(media/banner768.JPEG);
+            }
+        }
+
+        @media (max-width: 380px) {
+            .header-container h1 {
+                font-size: 2.5em;
+            }
+
+            .title-container {
+                padding: 20px 20px;
+            }
+        }
+
+        @media (max-width: 291px) {
+            .header-container h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
 
 <body>
